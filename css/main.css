@@ -8,6 +8,55 @@ main {
   background-position: left top;
 }
 
-body {
+.btn {
+  color: #b4fff4;
+  border-color: #90ccc3;
+  border-radius: 8px;
+  padding-left: 0;
+  padding-right: 0;
+}
 
+.icon {
+  transition: all .2s linear;
+}
+
+h1,
+p {
+  text-shadow: 0 0 10px rgba(255, 255, 255, .7);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: #90ccc3;
+  color: #b4fff4;
+  transition: all .2s linear;
+  transform-origin: left top;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus {
+  background-color: rgba(180, 255, 244, .2);
+  color: #b4fff4;
+  border-color: #b4fff4;
+}
+
+.btn-ghost:hover .icon {
+  transform: translateY(-.2em);
+}
+
+.bottom-btn {
+  width: 7em;
+  padding-top: .5em;
+  border-bottom: #90ccc3 solid 1.5px;
+  transition: all .2s linear;
+}
+
+.btn-ghost:hover .bottom-btn {
+  border-bottom: #b4fff4 solid 1.5px;
+}
+
+.btn-ghost:active {
+  margin: .3em 0 0;
+  top: .3em;
+  padding: .5em 0 .2em;
 }
